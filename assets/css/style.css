@@ -1,0 +1,100 @@
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.356);
+}
+
+.header .hd-voucher {
+    background: var(--color-main);
+    color: #fff;
+    padding: 3px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header .hd-voucher .hd-voucher-content {
+    font-size: 15px;
+    margin: auto;
+}
+
+.header .hd-voucher .hd-voucher-icon {
+    color: black;
+    font-size: 18px;
+}
+
+.header .hd-voucher .hd-voucher-icon:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.header .hd-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header .hd-main .inner-logo img {
+    height: 27px;
+    width: auto;
+}
+
+.header .hd-main .inner-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.header .hd-main .inner-menu-box {
+    display: flex;
+    align-items: center;
+}
+
+.header .hd-main .inner-menu-box i {
+    cursor: pointer;
+}
+
+.header .hd-main .inner-menu ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: var(--color-text-1);
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.2s;
+    margin-left: 38px;
+}
+
+.header .hd-main .inner-menu ul li a:hover {
+    color: var(--color-main);
+}
+
+.header .hd-main .inner-icon ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.header .hd-main .inner-icon ul li {
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: inline-flex;
+    font-size: 22.4px;
+    color: var(--color-text-1);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header .hd-main .inner-icon ul li a {
+    color: var(--color-text-1);
+}
+/* End Header */
