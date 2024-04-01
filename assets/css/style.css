@@ -35,6 +35,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    background: var(--color-text-2);
 }
 
 .header .hd-main .inner-logo img {
@@ -98,3 +99,117 @@
     color: var(--color-text-1);
 }
 /* End Header */
+
+/* Footer */
+.footer {
+    position: relative;
+    top: 200px;
+    background: var(--color-main);
+    padding: 10px;
+}
+
+.footer .footer-box-1 {
+    margin-left: 100px;
+}
+
+.footer .footer-box-1 .footer-box-1-img {
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.footer .footer-box-1 .footer-box-1-img img {
+    width: auto;
+    height: 30px;
+}
+
+.footer .footer-box-1 .footer-box-1-content-1 {
+    color: var(--color-text-2);
+    font-size: 24px;
+    opacity: 0.85;
+    font-weight: 500;
+    font-family: var(--font);
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-box-1 .footer-box-1-content-2 {
+    color: var(--color-text-2);
+    font-size: 18px;
+    opacity: 0.85;
+    font-family: var(--font);
+}
+
+.footer .footer-box-1 .footer-box-1-signup-button {
+    border: 1px #ffffff89 solid;
+    border-radius: 12px;
+    padding: 10px 30px;
+    background: var(--color-text-2);
+    text-align: center;
+    display: inline;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.footer .footer-box-1 .footer-box-1-signup-button a {
+    text-align: center;
+    color: var(--color-text-1);
+    font-size: 20px;
+}
+
+.footer .footer-box-1 .footer-box-1-signup-button:hover {
+    background: var(--color-highlight);
+}
+
+.footer .footer-box-2 {
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.footer .footer-box-2 .footer-box-2-inner {
+    margin-right: 50px;
+}
+
+.footer .footer-box-2 .footer-box-2-inner p {
+    color: var(--color-text-2);
+    font-size: 18px;
+}
+
+.footer .footer-box-2 .footer-box-2-inner p a {
+    color: var(--color-text-2);
+    font-size: 18px;
+}
+
+.footer .footer-box-2 .footer-box-2-inner .underline {
+    text-decoration: underline;
+}
+
+.footer .footer-box-2 .footer-box-2-inner .footer-box-2-title {
+    color: var(--color-text-2);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer .footer-box-2 .footer-box-2-inner .footer-box-2-icon a {
+    font-size: 22px;
+    margin-right: 15px;
+    color: var(--color-text-2);
+}
+
+.footer .footer-navbar {
+    content: "";
+    background: var(--color-text-2);
+    width: calc(100% - 170px);
+    height: 0.5px;
+    position: absolute;
+    bottom: 35px;
+    margin-left: 100px;
+}
+
+.footer .footer-cs {
+    color: var(--color-text-2);
+    margin-left: 100px;
+}
+
+/* End Footer */
