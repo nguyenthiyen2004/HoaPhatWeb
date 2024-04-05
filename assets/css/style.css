@@ -813,7 +813,7 @@
     background: var(--bg-1);
 }
 .section-7 .container {
-    height: 80vh;
+    height: 70vh;
     width: 80%;
     display: flex;
     align-items: center;
@@ -821,14 +821,14 @@
   }
   .section-7  .testimonial {
     position: relative;
-    max-width: 900px;
+    max-width: 1200px;
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
     overflow: hidden;
   }
   .section-7  .testimonial .image {
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
     border-radius: 50%;
   }
@@ -849,7 +849,7 @@
     color: var(--color-text-1);
   }
   .section-7  .slide .quote-icon {
-    font-size: 30px;
+    font-size: 28px;
     color: var(--color-main);
   }
   .section-7  .slide .details {
@@ -990,7 +990,7 @@
 /* Footer */
 .footer {
     position: relative;
-    margin-top: 600px;
+    margin-top: 60px;
     background: var(--color-main);
     padding: 10px;
 }

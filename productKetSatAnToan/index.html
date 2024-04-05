@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hòa Phát</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/javascript/webmanifest.json">
+</head>
+<body>
+        <header>
+            <div class="header">
+                <div id="elementToHide" class="hd-voucher">
+                    <div class="hd-voucher-content">
+                        Muốn được giảm 10% giá trị đơn hàng? Hãy sử dụng mã “HOAPHAT” khi thanh toán.
+                    </div>
+                    <div class="hd-voucher-icon" onclick="hideElement()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <nav class="nav container">
+                    <div class="nav__data">
+                       <a href="#" class="nav__logo">
+                          <img src="assets/images/logo.png" alt="">
+                       </a>
+                       
+                       <div class="nav__toggle" id="nav-toggle">
+                          <i class="ri-menu-line nav__burger"></i>
+                          <i class="ri-close-line nav__close"></i>
+                       </div>
+                    </div>
+        
+                    <!--=============== NAV MENU ===============-->
+                    <div class="nav__menu" id="nav-menu">
+                       <ul class="nav__list">
+                          <li><a href="#" class="nav__link">Trang chủ</a></li>
+                          <!--=============== DROPDOWN 1 ===============-->
+                          <li class="dropdown__item">
+                             <div class="nav__link">
+                                Về chúng tôi <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                             </div>
+        
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                       <i class="ri-pie-chart-line"></i> Thông tin chung
+                                    </a>                          
+                                 </li>
+                                 <li>
+                                    <a href="#" class="dropdown__link">
+                                       <i class="ri-arrow-up-down-line"></i> Chính sách kinh doanh
+                                    </a>
+                                 </li>
+                                 <li>
+                                   <a href="#" class="dropdown__link">
+                                      <i class="ri-arrow-up-down-line"></i> Quy định
+                                   </a>
+                                 </li>
+                                 <li>
+                                   <a href="#" class="dropdown__link">
+                                      <i class="ri-arrow-up-down-line"></i> Hướng dẫn
+                                   </a>
+                                </li>
+                            </ul>      
+                          </li>
+                          <!--=============== DROPDOWN 2 ===============-->
+                          <li class="dropdown__item">
+                             <div class="nav__link">
+                                Sản phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                             </div>
+        
+                             <ul class="dropdown__menu">
+                                <li>
+                                   <a href="#" class="dropdown__link">
+                                    <i class="ri-table-line"></i> Bàn
+                                   </a>                          
+                                </li>
+        
+                                <li>
+                                   <a href="#" class="dropdown__link">
+                                    <i class="ri-wheelchair-line"></i> Ghế
+                                   </a>
+                                </li>
+        
+                                <li>
+                                   <a href="#" class="dropdown__link">
+                                    <i class="ri-archive-drawer-line"></i> Tủ
+                                   </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="dropdown__link">
+                                    <i class="ri-archive-line"></i> Két sắt
+                                  </a>
+                               </li>
+                             </ul>
+                          </li>
+        
+                          <li><a href="#" class="nav__link">Liên hệ</a></li>
+                          <li><a href="#" class="nav__link">Đại lý</a></li>
+        
+                          <li class="dropdown__item">
+                            <div class="nav__link">
+                              Người dùng <i class="ri-shield-user-line"></i>
+                            </div>
+        
+                            <ul class="dropdown__menu">
+                               <li>
+                                  <a href="#" class="dropdown__link">
+                                    <i class="ri-user-line"></i> Hồ sơ người dùng
+                                  </a>                          
+                               </li>
+                               <li>
+                                <a href="#" class="dropdown__link">
+                                  <i class="ri-shopping-cart-line"></i> Giỏ hàng
+                                </a>
+                               </li>
+                               <li>
+                                  <a href="#" class="dropdown__link">
+                                    <i class="ri-logout-box-r-line"></i> Đăng xuất
+                                  </a>
+                               </li>
+                            </ul>
+                         </li>
+                       </ul>
+                    </div>
+                </div>
+                  </div>
+                 </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container" id="blur" >
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <img class="anhsp" src="assets/images/product.png" alt="anhsp">
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="right">
+                        <div class="name-product">Két sắt an toàn</div>
+                        <div class="product-price">5.499.000 VNĐ</div>
+                        <div class="star"> 
+                            <img class="five-star" src="assets/images/five-star.png" alt="star">
+                            <div>(69)</div>
+                        </div>
+                        <div>
+                            <div class="title">
+                                Giới thiệu: 
+                            </div>
+                            <ul class="list">
+                            <li>
+                                Két sắt đứng có khóa chìa, khóa mã, tay nắm, 1 đợt di động và ngăn kéo. Bánh xe sắt di chuyển. Mặt cánh được trang trí mặt nạ nhựa Pet hiện đại                                </li>
+                            </ul>
+                            <div class="title">
+                                Chất liệu:  
+                            </div>
+                            <ul class="list">
+                                <li>
+                                    Két được làm bằng thép mạ kẽm an toàn và có thể chống cháy nổ                     
+                               </li>
+                            </ul>
+                            <div class="title">
+                                Kích thước: 
+                            </div>
+                            <ul class="list">
+                                <li>
+                                    Bên ngoài: W400 x D535 x H617mm
+                                </li>
+                                <li>
+                                    Bên trong: W273 x D361 x H422mm
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="add-to-cart">
+                            <div>
+                                <label for="">số lượng: </label>
+                                <input type="number" class="input" min="0">
+                            </div>
+                            <button class="add"><p class="button-click" onclick="toggle()">Thêm vào giỏ hàng</p></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup">
+            <h2><i class="fa-solid fa-check fa-fade" style="color: #000000; background-color: var(--color-main); margin-left: 220px; ; padding: 15px 17px ;border: #000000 1px solid; border-radius: 100%; "></i></h2>
+            <h2 style="margin-left: 35px;" >Thêm vào giỏ hàng thành công </h2>
+            <p style="margin-left: 60px;">Nếu quý khách còn thắc mắc nào, xin vui lòng liên hệ lại.</p>
+            <p class="button-click dong" onclick="toggle()">Đóng</p>
+        </div>
+        <div class="container" id="blur2" >
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="comment">
+                        <div class="title">Bình luận</div>
+                        <div class="comment-box">
+                            <input type="text" class="input-comment" placeholder="Nội dung bình luận">
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-name">
+                                <div class="name-comment">
+                                    <img src="assets/images/avt-huy.png" alt="avt-huy" class="avt">
+                                    <div>
+                                        <div class="comment-name">Trương Quang Huy</div>
+                                        <img class="five-star" src="assets/images/five-star.png" alt="star">
+                                    </div>
+                                </div>
+                                <div class="report">
+                                    <p style="cursor: pointer;"><img src="assets/images/report.png" alt="3cham" id="btnn1"></p>
+                                    <button id="list1"><p style="margin: auto;" class="button-click" onclick="toggle2()">Báo cáo</p></button>
+                                </div>
+                            </div>
+                            <div class="comment-content">Một sản phẩm tuyệt vời đến từ Hòa Phát. Thật không thể tin nổi
+                                tôi đã mua được sản phẩm này với giá chỉ là 3 triệu đồng. </div>
+                            <div class="like">
+                                <img src="assets/images/Facebook-Like.png" alt="like" class="like-icon">
+                                <div class="like-like">like</div>
+                                <div class="like-cmt">comment</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment-item">
+                            <div class="comment-name">
+                                <div class="name-comment">
+                                    <img src="assets/images/avt-quang.png" alt="avt-quang" class="avt">
+                                    <div>
+                                        <div class="comment-name">Nguyễn Minh Quang</div>
+                                        <img class="five-star" src="assets/images/five-star.png" alt="star">
+                                    </div>
+                                </div>
+                                <div class="report">
+                                    <p style="cursor: pointer;"><img src="assets/images/report.png" alt="3cham" id="btnn2"></p>
+                                    <button id="list2"><p style="margin: auto;" class="button-click" onclick="toggle2()">Báo cáo</p></button>
+                                </div>
+                            </div>
+                            <div class="comment-content">Chiều cao của bàn phù hợp với người sử dụng, giúp ngồi làm việc
+                                hoặc học tập thoải mái, không bị mỏi lưng. </div>
+                            <div class="like">
+                                <img src="assets/images/Facebook-Like.png" alt="like" class="like-icon">
+                                <div class="like-like">like</div>
+                                <div class="like-cmt">comment</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment-item">
+                            <div class="comment-name">
+                                <div class="name-comment">
+                                    <img src="assets/images/avt-long.png" alt="avt-long" class="avt">
+                                    <div>
+                                        <div class="comment-name">Nguyễn Đức Long</div>
+                                        <img class="five-star" src="assets/images/five-star.png" alt="star">
+                                    </div>
+                                </div>
+                                <div class="report">
+                                    <p style="cursor: pointer;"><img src="assets/images/report.png" alt="3cham" id="btnn3"></p>
+                                    <button id="list3"><p style="margin: auto;" class="button-click" onclick="toggle2()">Báo cáo</p></button>
+                                </div>
+                            </div>
+                            <div class="comment-content">Cái bàn này đẹp quá! Thiết kế đơn giản nhưng sang trọng, rất
+                                phù hợp với phong cách nhà tôi. </div>
+                            <div class="like">
+                                <img src="assets/images/Facebook-Like.png" alt="like" class="like-icon">
+                                <div class="like-like">like</div>
+                                <div class="like-cmt">comment</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment-item">
+                            <div class="comment-name">
+                                <div class="name-comment">
+                                    <img src="assets/images/avt-yen.png" alt="avt-yen" class="avt">
+                                    <div>
+                                        <div class="comment-name">Nguyễn Thị Yến</div>
+                                        <img class="five-star" src="assets/images/five-star.png" alt="star">
+                                    </div>
+                                </div>
+                                <div class="report">
+                                    <p style="cursor: pointer;"><img src="assets/images/report.png" alt="3cham" id="btnn4"></p>
+                                    <button id="list4"><p style="margin: auto;" class="button-click" onclick="toggle2()">Báo cáo</p></button>
+                                </div>
+    
+                            </div>
+                            <div class="comment-content">Chất liệu gỗ tốt có khả năng chống thấm nước và chống mối mọt
+                                tốt, giúp tăng tuổi thọ cho sản phẩm. </div>
+                            <div class="like">
+                                <img src="assets/images/Facebook-Like.png" alt="like" class="like-icon">
+                                <div class="like-like">like</div>
+                                <div class="like-cmt">comment</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment-item">
+                            <div class="comment-name">
+                                <div class="name-comment">
+                                    <img src="assets/images/avt-chung.png" alt="avt-chung" class="avt">
+                                    <div>
+                                        <div class="comment-name">Vin Thị Trung</div>
+                                        <img class="five-star" src="assets/images/five-star.png" alt="star">
+                                    </div>
+                                </div>
+                                <div class="report">
+                                    <p style="cursor: pointer;"><img src="assets/images/report.png" alt="3cham" id="btnn5"></p>
+                                    <button id="list5"><p style="margin: auto;" class="button-click" onclick="toggle2()">Báo cáo</p></button>
+                                </div>
+                            </div>
+                            <div class="comment-content">Nếu bạn đang tìm kiếm một chiếc bàn đẹp, tiện dụng và chất
+                                lượng tốt, thì đây là một lựa chọn tuyệt vời. </div>
+                            <div class="like">
+                                <img src="assets/images/Facebook-Like.png" alt="like" class="like-icon">
+                                <div class="like-like">like</div>
+                                <div class="like-cmt">comment</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="popup2">
+            <h2><i class="fa-solid fa-check fa-fade" style="color: #000000; background-color: var(--color-main); margin-left: 220px; ; padding: 15px 17px ;border: #000000 1px solid; border-radius: 100%; "></i></h2>
+            <h2 style="margin-left: 150px;" >Đã gửi báo cáo</h2>
+            <p style="margin-left: 60px;">Nếu quý khách còn thắc mắc nào, xin vui lòng liên hệ lại.</p>
+            <p class="button-click dong" onclick="toggle2()">Đóng</p>
+        </div>
+
+            <div class="container">
+                <div class="sp-khac title">
+                    Sản phẩm khác
+                </div>
+            </div>
+            <div class="todung">
+                <div class="slider">
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product1.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">BÀN LIỀN VÁCH NGĂN</div>
+                                <div class="so-sp inner-desc price">17 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product2.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">BÀN CAFE</div>
+                                <div class="so-sp inner-desc price">42 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product3.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">BÀN LỄ TÂN</div>
+                                <div class="so-sp inner-desc price">65 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product4.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">GHẾ NGỦ VĂN PHÒNG</div>
+                                <div class="so-sp inner-desc price">13 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product5.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">GHẾ VĂN PHÒNG</div>
+                                <div class="so-sp inner-desc price">96 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product6.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">GHẾ SÂN VẬN ĐỘNG</div>
+                                <div class="so-sp inner-desc price">69 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product7.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">KÉT SẮT VÂN HOA</div>
+                                <div class="so-sp inner-desc price">11 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product8.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">KÉT SẮT HOÀNG GIA</div>
+                                <div class="so-sp inner-desc price">9 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product9.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">KÉT SẮT KHÁCH SẠN</div>
+                                <div class="so-sp inner-desc price">64 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product10.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">TỦ NEWTREND</div>
+                                <div class="so-sp inner-desc price">29 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product11.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">TỦ THẤP</div>
+                                <div class="so-sp inner-desc price">13 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" style="text-decoration: none; color: black;">
+                        <div class="box product productt">
+                            <div class="images inner-box-">
+                                <img src="assets/images/product12.png" alt="">
+                            </div>
+                            <div class="nd information ">
+                                <div class="product-name inner-title title">TỦ ROYAL</div>
+                                <div class="so-sp inner-desc price">25 sản phẩm</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="arrow">
+                        <button class="left" onclick="left()" > < </button>
+                        <button class="right" onclick="right()"> > </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-5 col-md-8 mx-auto">
+                        <div class="chinh-sach">
+                            <div style="margin: auto;">
+                                <div class="tieu-De"><u>Vận chuyển sản phẩm</u></div>
+                                <ul>
+                                    <li>Nhanh chóng và đáng tin cậy.</li>
+                                    <li>Bao bì an toàn.</li>
+                                    <li>Theo dõi và cập nhập.</li>
+                                    <li>Tùy chọn giao hàng.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-8 mx-auto">
+                        <div class="chinh-sach">
+                            <div style="margin: auto;">
+                                <div class="tieu-De"><u>Chính sách đổi trả</u></div>
+                                <ul>
+                                    <li>Đủ điều kiện.</li>
+                                    <li>Quy trình trả hàng.</li>
+                                    <li>Vận chuyển trở lại.</li>
+                                    <li>Hoàn tiền hoặc trao đổi.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                        <div style="margin-left: 50px;" class="block">
+                            <img style="height: 50px; width: 50px;" src="assets/images/icon1.png" alt="icon1">
+                            <div>Miễn phí giao hàng với đơn trên 1.000.000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                        <div style="margin-left: 50px;" class="block">
+                            <img style="height: 50px; width: 50px;" src="assets/images/icon2.png" alt="icon2">
+                            <div>Theo dõi đơn hàng và kiểm tra khi nhận hàng </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                        <div style="margin-left: 50px;" class="block">
+                            <img style="height: 50px; width: 50px;" src="assets/images/icon3.png" alt="icon3">
+                            <div>Chính sách đổi trả và hoàn tiền</div>
+                        </div>
+                    </div>
+                    <div style="height: 50px; width: 50px;" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                        <div style="margin-left: 50px;" class="block">
+                            <img style="height: 50px; width: 50px;" src="assets/images/icon4.png" alt="icon4">
+                            <div>Hỗ trợ tư vấn trực tiếp</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+                <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                <div class="footer-box-1">
+                    <div class="footer-box-1-img">
+                        <img src="assets/images/logo.png" alt="Hòa Phát">
+                    </div>
+                    <p class="footer-box-1-content-1">Nhận thông tin mới:</p>
+                    <p class="footer-box-1-content-2">Đăng kí với chúng tôi</p>
+                    <div class="footer-box-1-signup-button">
+                        <a href="#" target="_blank">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6">
+                <div class="footer-box-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-box-2-inner">
+                                <p class="footer-box-2-title">Các trang</p>
+                                <p><a href="/index.html">Trang chủ</a></p>
+                                <p><a href="#" target="_blank">Về chúng tôi</a></p>
+                                <p><a href="#" target="_blank">Sản phẩm</a></p>
+                                <p><a href="#" target="_blank">Liên hệ</a></p>
+                                <p><a href="#" target="_blank">Đại lý</a></p>    
+                            </div>
+                        </div> 
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-box-2-inner">
+                                <p class="footer-box-2-title">Tiện ích</p>
+                                <p><a href="#" target="_blank">Bố trí</a></p>
+                                <p><a href="#" target="_blank">Hướng dẫn</a></p>
+                                <p><a href="#" target="_blank">Giấy phép</a></p>
+                                <p><a href="#" target="_blank">Kênh Blog</a></p>    
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-box-2-inner">
+                                <p class="footer-box-2-title">Liên hệ</p>
+                                <p class="underline">HP@gmail.com</p>
+                                <p class="underline">(+84) 12345678</p>
+                                <div class="footer-box-2-icon">
+                                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-navbar">
+            <p></p>
+        </div>
+        <a class="footer-cs" href="#" target="_blank">CHÍNH SÁCH</a>
+    </div>
+    <!-- End Footer -->
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>

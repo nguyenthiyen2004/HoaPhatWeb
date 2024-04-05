@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hòa Phát</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/javascript/webmanifest.json">
+</head>
+<body>
+        <header>
+            <div class="header">
+                <div id="elementToHide" class="hd-voucher">
+                    <div class="hd-voucher-content">
+                        Muốn được giảm 10% giá trị đơn hàng? Hãy sử dụng mã “HOAPHAT” khi thanh toán.
+                    </div>
+                    <div class="hd-voucher-icon" onclick="hideElement()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <nav class="nav container">
+                    <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                    </div>
+
+                    <!--=============== NAV MENU ===============-->
+                    <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="#" class="nav__link">Trang chủ</a></li>
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Về chúng tôi <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                    <i class="ri-pie-chart-line"></i> Thông tin chung
+                                    </a>                          
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i> Chính sách kinh doanh
+                                    </a>
+                                </li>
+                                <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i> Quy định
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-arrow-up-down-line"></i> Hướng dẫn
+                                </a>
+                                </li>
+                            </ul>      
+                        </li>
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Sản phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-table-line"></i> Bàn
+                                </a>                          
+                                </li>
+
+                                <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-wheelchair-line"></i> Ghế
+                                </a>
+                                </li>
+
+                                <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-archive-drawer-line"></i> Tủ
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-archive-line"></i> Két sắt
+                                </a>
+                            </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="nav__link">Liên hệ</a></li>
+                        <li><a href="#" class="nav__link">Đại lý</a></li>
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                            Người dùng <i class="ri-shield-user-line"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-user-line"></i> Hồ sơ người dùng
+                                </a>                          
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                <i class="ri-shopping-cart-line"></i> Giỏ hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-logout-box-r-line"></i> Đăng xuất
+                                </a>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+
+
+
+
+        <main>
+            <div class="hehe"></div>
+            <div class="background">
+                <div>BÀN HÒA PHÁT</div>
+                <div class="gach_duoi"></div>
+            </div>
+            <div  class="bo_loc_nhanh">
+                <ul class="ten">
+                  <li class="lua_chon_loc">Bộ lọc nhanh <i class="fa-solid fa-filter haha"></i></li>
+                </ul>
+                <ul class="ten acd">
+                    <li class="lua_chon_loc">
+                        <div class="search-bar">
+                            <input id="search-bar1" class="search-barhaha" type="text" placeholder="Tìm kiếm">
+                            <button id="search-bar" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </li>
+                  <li class="lua_chon_loc">Mới nhất</li>
+                  <li class="lua_chon_loc">Giá tăng dần</li>
+                  <li class="lua_chon_loc">Giá giảm dần</li>
+                  <li class="lua_chon_loc">
+                    <div class="dropdownn">
+                        <button id="btnn">Lọc giá</button>
+                        <div class="content" id="list">
+                            <input type="number" min="0" id="input1" placeholder="Min">
+                            <input type="number" min="0" id="input2" placeholder="Max">
+                        </div>
+                        <i class="fa-solid fa-chevron-down" style="font-size: 16px; width: 1px;"></i>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN MAPLE</div>
+                                <div class="so-sp inner-desc">47 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product2.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN CAFE</div>
+                                <div class="so-sp inner-desc">42 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product3.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN VI TÍNH</div>
+                                <div class="so-sp inner-desc">52 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product4.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN PHÒNG ĂN</div>
+                                <div class="so-sp inner-desc">77 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product5.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN LỄ TÂN</div>
+                                <div class="so-sp inner-desc">65 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product6.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN NHÂN VIÊN</div>
+                                <div class="so-sp inner-desc">87 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product 7.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN ROYAL</div>
+                                <div class="so-sp inner-desc">100 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product8.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN LIỀN VÁCH NGĂN</div>
+                                <div class="so-sp inner-desc">17 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 ">
+                        <a href="#" style="text-decoration: none; color: black;">
+                        <div class="box product">
+                            <div class="inner-box-">
+                                <img src="assets/images/product9.png" alt="">
+                            </div>
+                            <div class="nd">
+                                <div class="product-name inner-title">BÀN NEW TREND</div>
+                                <div class="so-sp inner-desc">81 sản phẩm</div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="so-trang">
+                <div class="number-page">1/2</div>
+                <a href="#" style="text-decoration: none; color: black;">
+                <div class="next-previous">NEXT</div>
+                </a>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                        <div class="footer-box-1">
+                            <div class="footer-box-1-img">
+                                <img src="assets/images/logo.png" alt="Hòa Phát">
+                            </div>
+                            <p class="footer-box-1-content-1">Nhận thông tin mới:</p>
+                            <p class="footer-box-1-content-2">Đăng kí với chúng tôi</p>
+                            <div class="footer-box-1-signup-button">
+                                <a href="#">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-box-2">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="footer-box-2-inner">
+                                        <p class="footer-box-2-title">Các trang</p>
+                                        <p><a href="/index.html">Trang chủ</a></p>
+                                        <p><a href="#">Về chúng tôi</a></p>
+                                        <p><a href="#">Sản phẩm</a></p>
+                                        <p><a href="#">Liên hệ</a></p>
+                                        <p><a href="#">Đại lý</a></p>    
+                                    </div>
+                                </div> 
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="footer-box-2-inner">
+                                        <p class="footer-box-2-title">Tiện ích</p>
+                                        <p><a href="#">Bố trí</a></p>
+                                        <p><a href="#">Hướng dẫn</a></p>
+                                        <p><a href="#">Giấy phép</a></p>
+                                        <p><a href="#">Kênh Blog</a></p>    
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                    <div class="footer-box-2-inner">
+                                        <p class="footer-box-2-title">Liên hệ</p>
+                                        <p class="underline">HP@gmail.com</p>
+                                        <p class="underline">(+84) 12345678</p>
+                                        <div class="footer-box-2-icon">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-navbar">
+                    <p></p>
+                </div>
+                <a class="footer-cs" href="#">CHÍNH SÁCH</a>
+            </div>
+        </footer>
+
+        <script src="assets/javascript/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
