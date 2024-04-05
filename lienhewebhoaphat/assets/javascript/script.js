@@ -4,19 +4,7 @@ function hideElement() {
     element.style.display = "none";
 }
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    grabCursor: true,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-});
+
 
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
@@ -34,8 +22,9 @@ const showMenu = (toggleId, navId) =>{
 
 showMenu('nav-toggle','nav-menu')
 
-$(document).ready(() => {
-  $(".chat-btn").click(() => {
-      $(".chat-box").slideToggle("slow")
-  })
-})
+function toggle() {
+  var blur=document.getElementById('blur');
+  blur.classList.toggle('active');
+  var popup = document.getElementById('popup');
+  popup.classList.toggle('active');
+}
