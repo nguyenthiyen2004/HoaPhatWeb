@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hòa Phát</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="assets/javascript/webmanifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    
+    <!-- Header -->
+    <div class="header">
+        <div id="elementToHide" class="hd-voucher">
+            <div class="hd-voucher-content">
+                Muốn được giảm 10% giá trị đơn hàng? Hãy sử dụng mã “HOAPHAT” khi thanh toán.
+            </div>
+            <div class="hd-voucher-icon" onclick="hideElement()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                  <img src="assets/images/logo.png" alt="">
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Trang chủ</a></li>
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Về chúng tôi <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-pie-chart-line"></i> Thông tin chung
+                            </a>                          
+                         </li>
+                         <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> Chính sách kinh doanh
+                            </a>
+                         </li>
+                         <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Quy định
+                           </a>
+                         </li>
+                         <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Hướng dẫn
+                           </a>
+                        </li>
+                    </ul>      
+                  </li>
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Sản phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                            <i class="ri-table-line"></i> Bàn
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                            <i class="ri-wheelchair-line"></i> Ghế
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                            <i class="ri-archive-drawer-line"></i> Tủ
+                           </a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown__link">
+                            <i class="ri-archive-line"></i> Két sắt
+                          </a>
+                       </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#" class="nav__link">Liên hệ</a></li>
+                  <li><a href="#" class="nav__link">Đại lý</a></li>
+
+                  <li class="dropdown__item">
+                    <div class="nav__link">
+                      Người dùng <i class="ri-shield-user-line"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                            <i class="ri-user-line"></i> Hồ sơ người dùng
+                          </a>                          
+                       </li>
+                       <li>
+                        <a href="#" class="dropdown__link">
+                          <i class="ri-shopping-cart-line"></i> Giỏ hàng
+                        </a>
+                       </li>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                            <i class="ri-logout-box-r-line"></i> Đăng xuất
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+               </ul>
+            </div>
+        </div>
+          </div>
+         </nav>
+    </div>
+    <!-- End Header -->
+
+    <!-- section-->
+    
+    <div class="section-1">
+        <div class="main">LIÊN HỆ</div>  
+        <div class="para"><p>Hãy liên hệ với chúng tôi nếu có thắc mắc, phản hồi hoặc yêu cầu của bạn. Chúng tôi ở đây để hỗ trợ bạn. Liên hệ với chúng tôi qua điện thoại, email hoặc mẫu liên hệ của chúng tôi. Nhóm hỗ trợ tận tâm của chúng tôi luôn sẵn sàng 24/24 để trả lời các câu hỏi của bạn và cung cấp hỗ trợ. Chúng ta chỉ cần một tin nhắn hoặc một cuộc gọi đi.</p></div>
+       
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="section-2" style="margin-left: auto; margin-right:auto;">
+                    <div class="hd">Thông tin liên hệ</div>
+                    <div class="pa">Vui lòng liên hệ với chúng tôi thông qua thông tin liên hệ được cung cấp và chúng tôi sẽ nhanh chóng trả lời các câu hỏi của bạn. Chúng tôi mong nhận được phản hồi từ bạn và khám phá cách chúng tôi có thể hỗ trợ tốt nhất cho nhu cầu của bạn.</div>
+                    <div class="phone"><i class="fa-solid fa-phone" style="color: #43766c;"></i>  024 2200 1198</div>
+                    <div class="email"><i class="fa-solid fa-envelope" style="color: #43766c;"></i>  hoaphat@gmai.com</div>
+                    <div class="address"><i class="fa-solid fa-location-dot" style="color: #43766c;"></i>  Số 22 ngõ 68 Quan Nhân,Đống Đa, Hà Nội</div>
+                    <div class="face"><a href="https://www.facebook.com/Phanphoisuachuanoithathoaphat" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #43766c;"></i></a></div>
+                    <div class="insta"><a href="https://www.instagram.com/hoaphatnoithathm/" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #43766c;"></i></a></div>
+                    <div class="twiter"><a href="https://twitter.com/noithat_hoaphat" target="_blank"><i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #43766c;"></i></a></div>
+                </div>
+            </div>
+             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="section-3" style="margin-left: auto; margin-right:auto">
+                    <form>
+                        <input class="form-control" type="text" placeholder="Họ và tên">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                          </div> 
+                          <input class="form-control" type="text" placeholder="Số điện thoại">
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                        <div class="btn-1" id="blur"><p class="button-click" onclick="toggle()">Gửi</p></div>
+                        <div id="popup">
+                            <h2><i class="fa-solid fa-check fa-fade" style="color: #000000; background-color: var(--color-main); margin-left: 220px; ; padding: 15px 17px ;border: #000000 1px solid; border-radius: 100%; "></i></h2>
+                            <h2 style="margin-left: 140px;" >Gửi thành công </h2>
+                            <p style="margin-left: 60px;">Nếu quý khách còn thắc mắc nào, xin vui lòng liên hệ lại.</p>
+                            <p class="button-click dong" onclick="toggle()">Đóng</p>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+             </div>
+           
+    
+    <div class="section-4">
+       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.13992120584!2d106.59046212542306!3d10.800593742477036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b85d9fdaaab%3A0x9406eb068bb791ec!2zQ8O0bmcgVHkgVG5oaCBT4bqjbiBYdeG6pXQgTuG7mWkgVGjhuqV0IEjDsmEgUGjDoXQ!5e0!3m2!1svi!2s!4v1712343335106!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    
+
+
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+                <div class="footer-box-1">
+                    <div class="footer-box-1-img">
+                        <img src="assets/images/logo.png" alt="Hòa Phát">
+                    </div>
+                    <p class="footer-box-1-content-1">Nhận thông tin mới:</p>
+                    <p class="footer-box-1-content-2">Đăng kí với chúng tôi</p>
+                    <div class="footer-box-1-signup-button">
+                        <a href="#">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-6 col-md-6 col-sm-6">
+                <div class="footer-box-2">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-box-2-inner">
+                                <p class="footer-box-2-title">Các trang</p>
+                                <p><a href="/index.html">Trang chủ</a></p>
+                                <p><a href="#">Về chúng tôi</a></p>
+                                <p><a href="#">Sản phẩm</a></p>
+                                <p><a href="#">Liên hệ</a></p>
+                                <p><a href="#">Đại lý</a></p>    
+                            </div>
+                        </div> 
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-box-2-inner">
+                                <p class="footer-box-2-title">Tiện ích</p>
+                                <p><a href="#">Bố trí</a></p>
+                                <p><a href="#">Hướng dẫn</a></p>
+                                <p><a href="#">Giấy phép</a></p>
+                                <p><a href="#">Kênh Blog</a></p>    
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                            <div class="footer-box-2-inner">
+                                <p class="footer-box-2-title">Liên hệ</p>
+                                <p class="underline">HP@gmail.com</p>
+                                <p class="underline">(+84) 12345678</p>
+                                <div class="footer-box-2-icon">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-navbar">
+            <p></p>
+        </div>
+        <a class="footer-cs" href="#">CHÍNH SÁCH</a>
+    </div>
+    <!-- End Footer -->
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
