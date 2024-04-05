@@ -6,13 +6,26 @@
     <title>Nội Thất Hòa Phát - Nội Thất Văn Phòng Số 1 Việt Nam</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="manifest" href="assests/javascript/webmanifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/image/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon_io/favicon-32x32.png">
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 </head>
 <body>
 
-    <script src="assets/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
@@ -26,33 +39,114 @@
                 <i class="fa-solid fa-xmark"></i>
             </div>
         </div>
-        <div class="hd-main">
-            <div class="inner-logo">
-                    <img src="assets/image/logo.png" alt="Hòa Phát">
+        <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                  <img src="/assets/image/logo.png" alt="">
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
             </div>
-            <div class="inner-menu">
-                    <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <div class="inner-menu-box">
-                            <li><a href="#">Về chúng tôi</a></li>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="inner-menu-box">
-                            <li><a href="#">Sản phẩm</a></li>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <li><a href="#">Liên hệ</a></li>
-                        <li><a href="#">Đại lý</a></li>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link">Trang chủ</a></li>
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Về chúng tôi <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-pie-chart-line"></i> Thông tin chung
+                            </a>                          
+                         </li>
+                         <li>
+                            <a href="#" class="dropdown__link">
+                               <i class="ri-arrow-up-down-line"></i> Chính sách kinh doanh
+                            </a>
+                         </li>
+                         <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Quy định
+                           </a>
+                         </li>
+                         <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-arrow-up-down-line"></i> Hướng dẫn
+                           </a>
+                        </li>
+                    </ul>      
+                  </li>
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Sản phẩm <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                            <i class="ri-table-line"></i> Bàn
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                            <i class="ri-wheelchair-line"></i> Ghế
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                            <i class="ri-archive-drawer-line"></i> Tủ
+                           </a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown__link">
+                            <i class="ri-archive-line"></i> Két sắt
+                          </a>
+                       </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#" class="nav__link">Liên hệ</a></li>
+                  <li><a href="#" class="nav__link">Đại lý</a></li>
+
+                  <li class="dropdown__item">
+                    <div class="nav__link">
+                      Người dùng <i class="ri-shield-user-line"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                            <i class="ri-user-line"></i> Hồ sơ người dùng
+                          </a>                          
+                       </li>
+                       <li>
+                        <a href="#" class="dropdown__link">
+                          <i class="ri-shopping-cart-line"></i> Giỏ hàng
+                        </a>
+                       </li>
+                       <li>
+                          <a href="#" class="dropdown__link">
+                            <i class="ri-settings-5-line"></i> Cài đặt
+                          </a>
+                       </li>
                     </ul>
-            </div>
-            <div class="inner-icon">
-                <ul>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><i class="fa-solid fa-circle-user"></i></li>
-                </ul>
+                 </li>
+               </ul>
             </div>
         </div>
+          </div>
+         </nav>
     </div>
     <!-- End Header -->
 
@@ -63,7 +157,7 @@
                 <div class="inner-wrap">
                     <img src="assets/image/bg-trang-chu.png" alt="">
                     <img src="assets/image/s1.jpg" alt="">
-                    <img src="assets/image/s2.jpg" alt="">
+                    <img src="assets/image/s5.jpg" alt="">
                     <img src="assets/image/s3.jpg" alt="">
                     <img src="assets/image/s4.jpg" alt="">
                 </div>
@@ -83,23 +177,393 @@
     </div>
     <!-- End Section 1 -->
 
+    <!-- Sectione 2 -->
+    <div class="section-2">
+        <div class="inner-title">
+            <div class="inner-title-box">
+                Sản phẩm HOT
+            </div>
+        </div>
+        <div class="inner-product">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="inner-box">
+                        <div class="inner-img">
+                            <img src="assets/image/chair-1.png" alt="">
+                        </div>
+                        <div class="inner-infor">
+                            <a href="#" class="inner-infor-title">
+                                Ghế giám đốc
+                            </a>
+                            <div class="inner-infor-desc">
+                                Mềm mại, bền bỉ, sang trọng
+                            </div>
+                            <div class="inner-infor-price">
+                                8.999.000 VNĐ <span class="inner-infor-price-mini"><strike>10.990.000 VNĐ</strike></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="inner-box">
+                        <div class="inner-img">
+                            <img src="assets/image/table.png" alt="">
+                        </div>
+                        <div class="inner-infor">
+                            <a href="#" class="inner-infor-title">
+                                Bàn làm việc vừa
+                            </a>
+                            <div class="inner-infor-desc">
+                                Hiện đại, tiện nghi
+                            </div>
+                            <div class="inner-infor-price">
+                                2.099.000 VNĐ <span class="inner-infor-price-mini"><strike>4.990.000 VNĐ</strike></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="inner-box">
+                        <div class="inner-img">
+                            <img src="assets/image/chair-2.png" alt="">
+                        </div>
+                        <div class="inner-infor">
+                            <a href="#" class="inner-infor-title">
+                                Ghế xoay
+                            </a>
+                            <div class="inner-infor-desc">
+                                Nhỏ gọn, linh hoạt
+                            </div>
+                            <div class="inner-infor-price">
+                                1.590.000 VNĐ <span class="inner-infor-price-mini"><strike>2.990.000 VNĐ</strike></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="inner-box">
+                        <div class="inner-img">
+                            <img src="assets/image/wardrobe.png" alt="">
+                        </div>
+                        <div class="inner-infor">
+                            <a href="#" class="inner-infor-title">
+                                Tủ hai tầng
+                            </a>
+                            <div class="inner-infor-desc">
+                                Hiện đại, rộng rãi, thông minh
+                            </div>
+                            <div class="inner-infor-price">
+                                8.999.000 VNĐ <span class="inner-infor-price-mini"><strike>10.990.000 VNĐ</strike></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- End Section 2 -->
 
+    <!-- Section 3 -->
+    <div class="section-3">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="box">
+                    <div class="inner-title">
+                        Đề cao phong cách và sự tiện nghi
+                    </div>
+                    <div class="inner-desc">
+                        Chào mừng đến Hòa Phát, nơi mà thiết kế và tiện nghi được khéo léo thêm thắt bên trong các sản phẩm nội thất.  
+                    </div>
+                    <div class="inner-infor">
+                        Hòa Phát là Tập đoàn sản xuất công nghiệp hàng đầu Việt Nam. Khởi đầu từ một Công ty chuyên buôn bán các loại máy xây dựng từ tháng 8/1992, Hòa Phát lần lượt mở rộng sang các lĩnh vực khác như Nội thất, ống thép, thép xây dựng, điện lạnh, bất động sản và nông nghiệp.
+                    </div>
+                    <a href="#" class="button">
+                        <div class="button-content">Mua sắm sản phẩm mới</div>
+                    </a>
+                    <div class="inner-more">
+                        TÌM HIỂU THÊM
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="inner-img">
+                    <img src="/assets/image/president.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section 3 -->
 
+    <!-- Section 4 -->
+    <div class="section-4">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-title">
+                    Đa dạng sản phẩm lựa chọn
+                </div>
+            </div>
+        </div>
+        <div class="row inner-line">
+            <div class="col-xl-2">
+                <div class="inner-box">
+                    <img src="/assets/image/chair-5.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="inner-box">
+                    <img src="/assets/image/cabinet.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="inner-box">
+                    <img src="/assets/image/ketsat.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="inner-box">
+                    <img src="/assets/image/chair-7.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="inner-box">
+                    <img src="/assets/image/cabinet-2.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="inner-box">
+                    <img src="/assets/image/chair-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section 4 -->
 
+    <!-- Section 5 -->
+    <div class="section-5">
+        <div class="wrap">
+            <span class="box">
+                MUA BỘ SƯU TẬP MỚI
+            </span>
+            <span class="bao-hanh">Bảo hành 2 năm</span>
+            <span class="box">
+                MUA BỘ SƯU TẬP MỚI
+            </span>
+            <span class="bao-hanh">Miễn phí đổi trả</span>
+            <span class="box">
+                MUA BỘ SƯU TẬP MỚI
+            </span>
+        </div>
+    </div>
+    <!-- End Section 5 -->
 
+    <!-- Section 6 -->
+    <div class="section-6">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="box-img">
+                    <div class="box-img-content">
+                        <div class="inner-title">
+                            Bộ sưu tập mới nhất
+                        </div>
+                        <div class="inner-desc">
+                            Khám phá các sản phẩm mới và bán chạy nhất
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="button">MUA NGAY</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product">
+                    <div class="inner-img">
+                        <img src="assets/image/table.png" alt="">
+                    </div>
+                    <div class="inner-infor">
+                        <a href="#" class="inner-infor-title">
+                            Bàn làm việc vừa
+                        </a>
+                        <div class="inner-infor-desc">
+                            Hiện đại, tiện nghi
+                        </div>
+                        <div class="inner-infor-price">
+                            2.099.000 VNĐ <span class="inner-infor-price-mini"><strike>4.990.000 VNĐ</strike></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product">
+                    <div class="inner-img">
+                        <img src="assets/image/wardrobe.png" alt="">
+                    </div>
+                    <div class="inner-infor">
+                        <a href="#" class="inner-infor-title">
+                            Tủ hai tầng
+                        </a>
+                        <div class="inner-infor-desc">
+                            Hiện đại, rộng rãi, thông minh
+                        </div>
+                        <div class="inner-infor-price">
+                            8.999.000 VNĐ <span class="inner-infor-price-mini"><strike>10.990.000 VNĐ</strike></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-2">
+            <div class="col-xl-3">
+                <div class="product">
+                    <div class="inner-img">
+                        <img src="assets/image/table.png" alt="">
+                    </div>
+                    <div class="inner-infor">
+                        <a href="#" class="inner-infor-title">
+                            Bàn làm việc vừa
+                        </a>
+                        <div class="inner-infor-desc">
+                            Hiện đại, tiện nghi
+                        </div>
+                        <div class="inner-infor-price">
+                            2.099.000 VNĐ <span class="inner-infor-price-mini"><strike>4.990.000 VNĐ</strike></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="product">
+                    <div class="inner-img">
+                        <img src="assets/image/wardrobe.png" alt="">
+                    </div>
+                    <div class="inner-infor">
+                        <a href="#" class="inner-infor-title">
+                            Tủ hai tầng
+                        </a>
+                        <div class="inner-infor-desc">
+                            Hiện đại, rộng rãi, thông minh
+                        </div>
+                        <div class="inner-infor-price">
+                            8.999.000 VNĐ <span class="inner-infor-price-mini"><strike>10.990.000 VNĐ</strike></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="img-chair">
+                    <img src="assets/image/bg-3.png" alt=""> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section 6 -->
 
+    <!-- Section 7 -->
+    <div class="section-7">
+        <section class="container">
+            <div class="testimonial mySwiper">
+              <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                  <img src="/assets/image/feedback-3.jpg" alt="" class="image" />
+                  <p>
+                    는 베트남에서 가장 유명하고 신뢰받는 가구 브랜드 중 하나입니다. 1995년에 설립된 이 회사는 고품질의 사무용 가구, 주택 가구, 금속 제품을 생산하고 판매하는 데 전문성을 갖고 있습니다.                  </p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                    <span class="name">Faker</span>
+                    <span class="job">Khách hàng</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <img src="/assets/image/feedback-2.jpg" alt="" class="image" />
+                  <p>
+                    Một trong những nhà sản xuất nội thất bậc nhất ở Đông Nam Á, với những sản phẩm cao cấp, sang trọng những vẫn giữ được giá cả  phải chăng. Nội thất Hòa Pháp xứng đáng được xuất hiện trong mọi căn nhà tại Việt Nam.  
+                  </p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                    <span class="name">Nguyễn Thị Yến</span>
+                    <span class="job">Khách hàng</span>
+                  </div>
+                </div>
+                <div class="slide swiper-slide">
+                  <img src="/assets/image/feedback-1.png" alt="" class="image" />
+                  <p>
+                    Một trong những nhà sản xuất nội thất bậc nhất ở Đông Nam Á, với những sản phẩm cao cấp, sang trọng những vẫn giữ được giá cả  phải chăng. Nội thất Hòa Pháp xứng đáng được xuất hiện trong mọi căn nhà tại Việt Nam.  
+                  </p>
+                  <i class="bx bxs-quote-alt-left quote-icon"></i>
+                  <div class="details">
+                    <span class="name">Trương Quang Huy</span>
+                    <span class="job">Khách hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next nav-btn"></div>
+              <div class="swiper-button-prev nav-btn"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </div>
+    <!-- End Section 7 -->
 
+    <!-- Section 8 -->
+    <div class="section-8">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-title">
+                    Cải thiện lối sống
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 column">
+                <img class="img-1" src="/assets/image/chair-4.png" alt="">
+                <img class="img-2" src="/assets/image/bg-5.png" alt="">
+            </div>
+            <div class="col-xl-4 column">
+                <img class="img-3" src="/assets/image/bg-4.png" alt="">
+                <img class="img-4" src="/assets/image/bg-7.png" alt="">
+            </div>
+            <div class="col-xl-4 column">
+                <img class="img-5" src="/assets/image/bg-6.png" alt="">
+                <img class="img-6" src="/assets/image/logo.png" alt="">
+                <img class="img-7" src="/assets/image/bg-8.png" alt="">
+            </div>
+        </div>
+        <div class="line line-1"></div>
+    </div>
+    <!-- End Section 8 -->
 
-
-
-
-
-
-
-
-
-
-
+    <!-- Section 9 -->
+    <div class="section-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                    <div class="block-1 block">
+                        <img src="/assets/image/icon2.png" alt="icon1">
+                        <div>Miễn phí giao hàng với đơn trên 1.000.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                    <div class="block-1 block">
+                        <img src="/assets/image/icon2.png" alt="icon2">
+                        <div>Theo dõi đơn hàng và kiểm tra khi nhận hàng </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                    <div class="block-1 block">
+                        <img src="/assets/image/icon3.png" alt="icon3">
+                        <div>Chính sách đổi trả và hoàn tiền</div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mx-auto">
+                    <div class="block">
+                        <img src="/assets/image/icon4.png" alt="icon4">
+                        <div>Hỗ trợ tư vấn trực tiếp</div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section 9 -->
 
     <!-- Footer -->
     <div class="footer">
@@ -159,5 +623,10 @@
         <a class="footer-cs" href="#">CHÍNH SÁCH</a>
     </div>
     <!-- End Footer -->
+
+    <!-- Swiper JS -->
+    <script src="assets/javascript/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
