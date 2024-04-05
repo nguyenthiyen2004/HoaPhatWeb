@@ -131,7 +131,7 @@
   }
   
   .header .nav__link {
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-weight: var(--font-semi-bold);
     padding: 1.25rem 1.5rem;
@@ -990,7 +990,7 @@
 /* Footer */
 .footer {
     position: relative;
-    margin-top: 40px;
+    margin-top: 600px;
     background: var(--color-main);
     padding: 10px;
 }

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Playfair Display", serif;
+  --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+:root {
+    --color-main : #43766C;
+    --color-highlight: #D9D9D9;
+    --color-text-1: #1e1e1e;
+    --color-text-2: white;
+    --bg-1: #D9E4E2;
+    --bg-2: white; 
+
+    --font: "Playfair Display", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.product {
+    border: 1.5px var(--color-main) solid;
+    border-radius: 8px;
+    margin-right: 10px;
+    box-shadow: 0 3px 4px var(--color-main);
+    transition: all 0.3s;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.product:hover {
+    margin-top: -20px;
+}
+
+.product .inner-img {
+    background: var(--color-highlight);
+    border-radius: 8px 8px 0 0;
+    height: 60%;
+}
+
+.product .inner-infor {
+    padding: 20px 25px;
+}
+
+.product .inner-infor-title {
+    font-size: 28px;
+    color: var(--color-text-1);
+    font-weight: 600;
+}
+
+.product .inner-infor-desc {
+    color: var(--color-main);
+    font-size: 15px;
+}
+
+.product .inner-infor-price {
+    font-size: 18px;
+    color: var(--color-text-1);
+    font-weight: 500;
+}
+
+.product .inner-infor-price .inner-infor-price-mini {
+    color: var(--color-main);
+    font-size: 15px;
+}
+
+.dropdown__menu {
+    background: #ffffff84;
+    color: var(--color-main);
+}
