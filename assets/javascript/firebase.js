@@ -207,4 +207,32 @@ onAuthStateChanged(auth, async (user) => {
 
 // ! get data
 
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = contactForm.querySelector('input[name="fullName"]').value;
+    const email = contactForm.querySelector('input[name="email"]').value;
+    const phone = contactForm.querySelector('input[name="phoneNumber"]').value;
+    const message = contactForm.querySelector('textarea[name="message"]').value;
+
+    try {
+      const docRef = doc(collection(db, "contacts"));
+      await setDoc(docRef, {
+        name,
+        email,
+        phone,
+        message
+      });
+    
+      const buttonClick = document.querySelector('.button-click');
+      buttonClick.click();
+    
+    } catch (error) {
+      console.error("Error setting document: ", error);
+      alert('Gửi thông tin thất bại');
+    }
+  })
+}
+
 //! end firebase
