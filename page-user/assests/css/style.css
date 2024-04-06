@@ -174,3 +174,16 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
     background: white;
     color: #000;
 }
+
+.item-back {
+    margin-top: 50%;
+    background: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #000000ad !important;
+    padding: 10px !important;
+}
+
+.item-back:hover {
+    text-decoration: underline !important;
+}

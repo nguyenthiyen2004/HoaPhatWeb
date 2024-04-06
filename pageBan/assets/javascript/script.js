@@ -38,5 +38,11 @@ const showMenu = (toggleId, navId) =>{
     })
   }
   
-  showMenu('nav-toggle','nav-menu')
+  showMenu('nav-toggle','nav-menu');
+
+  $(document).ready(() => {
+    $(".chat-btn").click(() => {
+        $(".chat-box").slideToggle("slow")
+        })
+    })
 
